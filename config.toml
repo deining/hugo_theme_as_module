@@ -25,3 +25,20 @@ isHTML = true
 mediaType = "text/html"
 path = "_print"
 permalinkable = false
+
+[module]
+
+[[module.mounts]]
+source = "assets/bootstrap/scss/vendor"
+target = "assets/vendor/bootstrap/scss/vendor"
+
+[[module.imports]]
+path = "github.com/twbs/bootstrap"
+[[module.imports.mounts]]
+source = "scss"
+target = "assets/vendor/bootstrap/scss"
+
+[[module.imports]]
+path = "github.com/FortAwesome/Font-Awesone"
+source = "scss"
+target = "assets/vendor/Font-Awesome/scss"
