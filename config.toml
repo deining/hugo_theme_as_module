@@ -32,6 +32,10 @@ permalinkable = false
 source = "assets/bootstrap/scss/vendor"
 target = "assets/vendor/bootstrap/scss/vendor"
 
+[[module.mounts]]
+source = "layouts"
+target = "layouts"
+
 [[module.imports]]
 path = "github.com/twbs/bootstrap"
 [[module.imports.mounts]]
